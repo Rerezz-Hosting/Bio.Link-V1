@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Link By Rerezz Official</title>
+    <!-- Menentukan judul halaman yang ditampilkan di tab browser -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Memuat pustaka ikon Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Memuat font "Roboto" dari Google Fonts -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Mengatur jenis font untuk seluruh halaman */
+            margin: 0; /* Menghilangkan margin default dari browser */
+            padding: 0; /* Menghilangkan padding default dari browser */
+            color: #333; /* Warna teks umum */
+            overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+        }
+
+        .container {
+            position: relative; /* Memungkinkan penempatan elemen di dalam kontainer */
+            max-width: 500px; /* Membatasi lebar maksimum kontainer */
+            margin: 50px auto; /* Mengatur margin atas dan bawah serta auto untuk kiri dan kanan */
+            padding: 30px; /* Memberikan ruang di dalam kontainer */
+            background-image: url('https://pomf2.lain.la/f/w8jn00wb.jpeg'); /* Latar belakang kontainer sebagai foto */
+            background-size: cover; /* Memastikan gambar menutupi seluruh area */
+            background-position: center; /* Menjaga gambar tetap terpusat */
+            border: 3px solid rgb(255, 255, 255); /* Border putih di sekeliling kontainer */
+            border-radius: 10px; /* Membuat sudut kontainer melengkung */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan pada kontainer */
+            text-align: center; /* Mengatur teks di dalam kontainer agar berada di tengah */
+            z-index: 1; /* Menempatkan kontainer di atas elemen lain */
+            color: white; /* Mengubah warna teks menjadi putih untuk kontras */
+        }
+
+        header {
+            margin-bottom: 30px; /* Memberikan ruang di bawah header */
+        }
+
+        h1 {
+            font-size: 2.5em; /* Ukuran font untuk judul */
+            margin: 10px 0; /* Mengatur margin atas dan bawah */
+            color: #007bff; /* Warna judul */
+        }
+
+        p {
+            font-size: 1.2em; /* Ukuran font untuk deskripsi */
+            color: #fff; /* Warna deskripsi putih */
+            margin: 10px 0; /* Mengatur margin atas dan bawah */
+        }
+
+        .profile-img {
+            width: 120px; /* Lebar gambar profil */
+            height: 120px; /* Tinggi gambar profil */
+            border-radius: 50%; /* Membuat gambar profil menjadi bulat */
+            margin-bottom: 20px; /* Ruang di bawah gambar profil */
+            object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+            border: 3px solid #007bff; /* Border biru di sekeliling gambar profil */
+        }
+
+        .links {
+            display: flex; /* Menggunakan flexbox untuk layout */
+            flex-direction: column; /* Mengatur arah fleksibel menjadi kolom */
+            gap: 15px; /* Ruang antara setiap link */
+        }
+
+        .links a {
+            display: flex; /* Menggunakan flexbox untuk link */
+            align-items: center; /* Menyejajarkan item di tengah secara vertikal */
+            justify-content: space-between; /* Mengatur jarak antar elemen dalam link */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            padding: 15px; /* Memberikan ruang dalam link */
+            background-color: rgba(255, 255, 255, 0.75); /* Latar belakang tombol 75% transparan */
+            color: #333; /* Warna teks tombol */
+            border: 2px solid black; /* Border tombol berwarna hitam */
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Efek transisi saat hover */
+            font-size: 1.1em; /* Ukuran font untuk tombol */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada tombol */
+        }
+
+        .links a:hover {
+            transform: translateY(-8px) scale(1.1); /* Mengangkat dan memperbesar tombol saat hover */
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4); /* Bayangan lebih besar saat hover */
+            background-color: rgba(255, 255, 255, 0.9); /* Lebih terang saat hover */
+        }
+
+        .links a i {
+            margin: 0 10px; /* Ruang di sekitar ikon dalam tombol */
+        }
+
+        footer {
+            margin-top: 30px; /* Ruang di atas footer */
+            font-size: 0.9em; /* Ukuran font untuk footer */
+            color: #aaa; /* Warna teks footer */
+        }
+
+        video {
+            position: fixed; /* Menetapkan video sebagai latar belakang tetap */
+            top: 50%; /* Mengatur posisi video di tengah vertikal */
+            left: 50%; /* Mengatur posisi video di tengah horizontal */
+            min-width: 100%; /* Lebar minimum video 100% dari viewport */
+            min-height: 100%; /* Tinggi minimum video 100% dari viewport */
+            z-index: 0; /* Menempatkan video di belakang kontainer */
+            transform: translate(-50%, -50%); /* Menyesuaikan posisi video untuk benar-benar berada di tengah */
+            background: no-repeat; /* Menghindari pengulangan latar belakang */
+            background-size: cover; /* Memastikan video menutupi seluruh area */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="https://pomf2.lain.la/f/blp99l5s.mp4" type="video/mp4"> <!-- Menyertakan video sebagai latar belakang -->
+        Browser Anda tidak mendukung video. <!-- Pesan fallback jika video tidak bisa diputar -->
+    </video>
+    <div class="container">
+        <header>
+            <img src="https://pomf2.lain.la/f/w8jn00wb.jpeg" alt="Foto Profil" class="profile-img"> <!-- Gambar profil -->
+            <h1>Rerezz Oficial</h1> <!-- Nama yang ditampilkan -->
+            <p>Desainer Grafis & Kreator Konten</p> <!-- Deskripsi singkat -->
+        </header>
+        <main>
+            <section class="links">
+                <a href="https://www.rezz.store.digital-server.biz.id" target="_blank"> <!-- Link ke portofolio -->
+                    <i class="fas fa-briefcase"></i> <!-- Ikon untuk portofolio -->
+                    Portofolio
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <a href="https://instagram.com/rezz_hosting.0208" target="_blank"> <!-- Link ke Instagram -->
+                    <i class="fab fa-instagram"></i> <!-- Ikon untuk Instagram -->
+                    Instagram
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <a href="https://facebook.com/username" target="_blank"> <!-- Link ke Facebook -->
+                    <i class="fab fa-facebook-f"></i> <!-- Ikon untuk Facebook -->
+                    Facebook
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <a href="https://twitter.com/username" target="_blank"> <!-- Link ke Twitter -->
+                    <i class="fab fa-twitter"></i> <!-- Ikon untuk Twitter -->
+                    Twitter
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <a href="https://linkedin.com/in/username" target="_blank"> <!-- Link ke LinkedIn -->
+                    <i class="fab fa-linkedin-in"></i> <!-- Ikon untuk LinkedIn -->
+                    LinkedIn
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <a href="https://contoh.com/ebook" target="_blank"> <!-- Link ke ebook gratis -->
+                    <i class="fas fa-book"></i> <!-- Ikon untuk ebook -->
+                    Ebook Gratis
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <a href="https://contoh.com/kontak" target="_blank"> <!-- Link ke halaman kontak -->
+                    <i class="fas fa-envelope"></i> <!-- Ikon untuk email -->
+                    Kontak
+                    <i class="fas fa-sign-out-alt"></i> <!-- Ikon keluar -->
+                </a>
+                <!-- Tombol tambahan untuk WhatsApp -->
+                <a href="https://chat.whatsapp.com/LK9F3UZMJOfCdZpKsmujiw" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Valt9cOCMY0Pdcm3Mc0L" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Grup WhatsApp
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/LK9F3UZMJOfCdZpKsmujiw" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Saluran WhatsApp
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="https://t.me/rerez_x_hosting" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    Telegram
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="https://t.me/joinchat/link_grup" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                    Grup Telegram
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="https://youtube.com/channel/RerezzOffc" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="mailto:email@anda.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+                <a href="https://www.tiktok.com/@vilian.0208" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                    TikTok
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Rerezz Oficial</p> <!-- Menampilkan hak cipta -->
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { // Menunggu hingga dokumen sepenuhnya dimuat
+            const links = document.querySelectorAll('.links a'); // Mengambil semua elemen link dalam .links
+
+            links.forEach(link => { // Untuk setiap link
+                link.addEventListener('click', function() { // Menambahkan event listener untuk klik
+                    alert(`Anda akan diarahkan ke ${link.textContent}`); // Menampilkan pesan alert sebelum pengalihan
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!--
+CREDIS : REREZZ OFFICIAL [ DEVELOPER ]
+GROUP COADING : https://chat.whatsapp.com/LK9F3UZMJOfCdZpKsmujiw
+CH BAGI2 SOURCE : https://whatsapp.com/channel/0029Valt9cOCMY0Pdcm3Mc0L
+-->
